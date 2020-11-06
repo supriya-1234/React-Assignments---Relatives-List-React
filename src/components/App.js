@@ -3,12 +3,12 @@ import "../styles/App.css";
 const relatives = ["Ruby", "Alok", "Akash", "Jyoti"];
 export default function App() {
   return (
-    <>
+    <div>
       <ol key="relativeList">
-        {this.relatives.map((relative, index) => (
-          <li key={"relativeListItem" + (index + 1)}>{relative}</li>
+        {relatives.map((relative, index) => (
+          <li key={`relativeListItem${index + 1}`>{relative}</li>
         ))}
       </ol>
-    </>
+    </div>
   );
 }
